@@ -14,6 +14,7 @@ namespace InventoryManagementProject.Core.Models
         public int PurchaseId { get; set; }
         [ForeignKey("Vendor")]
         public int VendorId { get; set; }
+
         public Vendor? Vendor { get; set; }
         [ForeignKey("Product")]
         public int ProductId { get; set; }
@@ -21,5 +22,7 @@ namespace InventoryManagementProject.Core.Models
         [DataType(DataType.DateTime)]
         public DateTime PurchaseDate { get; set; }
         public double TotalPrice { get; set; }
+
+
     }
 }

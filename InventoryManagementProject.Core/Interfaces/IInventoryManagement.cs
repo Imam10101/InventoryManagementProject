@@ -12,7 +12,9 @@ namespace InventoryManagementProject.Core.Interfaces
         IProductRepository Products { get; }
         IVendorRepository Vendors { get; }
         ICustomerReopistory Customers { get; }
+
         IPurchaseRepository Purchases { get; }
+
         int Save();
     }
 }

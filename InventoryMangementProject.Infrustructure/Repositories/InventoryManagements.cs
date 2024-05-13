@@ -19,13 +19,15 @@ namespace InventoryMangementProject.Infrustructure.Repositories
                                 ICategoryRepository categories,
                                 IProductRepository productRepository,
                                 IVendorRepository vendorRepository,
-                                ICustomerReopistory customerReopistory)
+                                ICustomerReopistory customerReopistory,
+                                IPurchaseRepository purchaseRepository)
         {
             _context = context;
             Categories = categories;
             Products = productRepository;
             Vendors = vendorRepository;
             Customers = customerReopistory;
+            Purchases = purchaseRepository;
         }
         public int Save()
         {
